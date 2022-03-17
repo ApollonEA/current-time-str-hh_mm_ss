@@ -1,0 +1,8 @@
+import datetime
+
+cur_time = datetime.datetime.now()
+#print(cur_time)
+curtime_str = str(cur_time).split(" ")
+#print(curtime_str)
+curtime_hh_mm_ss = curtime_str[1].split(".")[0]
+curtime_ready = curtime_hh_mm_ss.split(":")[0] + "_" + curtime_hh_mm_ss.split(":")[1] + "_" + curtime_hh_mm_ss.split(":")[2]
